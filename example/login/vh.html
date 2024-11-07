@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css" />
+		<script src="https://kit.fontawesome.com/6022f28f6f.js" crossorigin="anonymous"></script>
+		<title>Document</title>
+		<style>
+			.login {
+				max-width: 24rem;
+				margin: 0 auto 20%;
+			}
+			.h-full {
+				height: 100vh;
+				align-content: center;
+			}
+			.login div.box {
+				padding: 1.75rem;
+			}
+			.overlay {
+				background-image: linear-gradient(to right, rgb(229 231 235) 0.5px, transparent 0.5px), linear-gradient(to bottom, rgb(229 231 235) 0.5px, transparent 0.5px);
+				background-size: 100px 100px;
+			}
+			.halo-outer {
+				position: absolute;
+				z-index: -10;
+				top: 0%;
+				right: 10%;
+				left: 10%;
+				filter: blur(64px);
+			}
+			.halo {
+				aspect-ratio: 3/1;
+				opacity: 0.2;
+				background-image: linear-gradient(to right, rgb(0 193 106), white);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="h-full">
+			<section class="section">
+				<div class="container">
+					<div class="login">
+						<div class="">
+							<div class="block">
+								<h1 class="title is-5">Sign in with email</h1>
+								<p class="subtitle is-6 has-text-grey">Enter your email below to create your account</p>
+							</div>
+							<div class="field">
+								<p class="control has-icons-left has-icons-right">
+									<input class="input" type="email" placeholder="Email" />
+									<span class="icon is-small is-left">
+										<i class="fas fa-envelope"></i>
+									</span>
+								</p>
+							</div>
+							<div class="field">
+								<p class="control has-icons-left">
+									<input class="input" type="password" placeholder="Password" />
+									<span class="icon is-small is-left">
+										<i class="fas fa-lock"></i>
+									</span>
+								</p>
+							</div>
+							<div class="field">
+								<p class="control">
+									<button class="button is-fullwidth is-primary">Login</button>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="halo-outer">
+				<div class="halo" style="clip-path: polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)"></div>
+			</div>
+		</div>
+	</body>
+</html>

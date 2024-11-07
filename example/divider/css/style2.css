@@ -1,0 +1,17 @@
+/* 第二种方法 * ~ * */
+.list {
+  background-color: #fafafa;
+  padding: 0 2rem;
+}
+.list > * ~ * {
+  border-top: 1px solid #ccc;
+}
+ul {
+  padding: 2rem 0;
+}
+
+/* 
+两者作用相同，都是选择“每个元素之后后后后”即从第二个子元素开始
+.divider > * + * 选择器的作用是：选择 .divider 元素的直接子元素中，每个元素之后紧邻的第一个兄弟元素。
+.divider > * ~ * 选择器的作用是：选择 .divider 元素的直接子元素中，每个元素之后的所有兄弟元素。
+*/

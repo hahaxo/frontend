@@ -1,0 +1,17 @@
+/* 第一种方法 :last-child */
+.list {
+  background-color: #fafafa;
+  padding: 0 2rem;
+}
+
+ul {
+  border-bottom: 1px solid #ccc;
+}
+
+ul:last-child {
+  border-bottom: none;
+}
+
+ul {
+  padding: 2rem 0;
+}

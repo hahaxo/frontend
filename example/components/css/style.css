@@ -1,0 +1,14 @@
+/* global 全局 */
+
+/* divider 分割线 */
+.divider-y > * + * {
+  border-top: 1px solid #f3f4f6;
+}
+.divider-x > * + * {
+  border-left: 1px solid #f3f4f6;
+}
+
+/* test */
+ul {
+  padding: 1rem 0;
+}
